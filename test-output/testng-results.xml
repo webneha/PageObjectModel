@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+      <class name="com.mla.qa.testcases.LoginTestPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mla.qa.testcases.LoginTestPage@5e3a8624]" name="setUp" is-config="true" duration-ms="13" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.mla.qa.testcases.LoginTestPage@5e3a8624]" name="beforeclass" is-config="true" duration-ms="0" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.mla.qa.testcases.LoginTestPage@5e3a8624]" name="loginPageTitleTest" duration-ms="3" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="mlaLogoImageTest()[pri:2, instance:com.mla.qa.testcases.LoginTestPage@5e3a8624]" name="mlaLogoImageTest" duration-ms="1" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mlaLogoImageTest -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.mla.qa.testcases.LoginTestPage@5e3a8624]" name="loginTest" duration-ms="0" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown1()[pri:0, instance:com.mla.qa.testcases.LoginTestPage@5e3a8624]" name="tearDown1" is-config="true" duration-ms="0" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mla.qa.testcases.LoginTestPage@5e3a8624]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-06-11T12:26:59Z" finished-at="2019-06-11T12:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mla.qa.testcases.LoginTestPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
