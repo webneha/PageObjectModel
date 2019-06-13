@@ -24,46 +24,40 @@ public class LoginTestPage extends TestBase {
 	}
 
 
-@BeforeClass
-	public void beforeclass(){
-		System.out.println("this is before class");
-	}
+
 
 	@BeforeTest
 	public void setUp() {
-		/*intialization();
-		loginpage = new LoginPage();*/
-		System.out.println("this is before Test");
+		intialization();
+		loginpage = new LoginPage();
+		
 	}
 	
 	@Test(priority = 1)
 	public void loginPageTitleTest() {
-		/*String title = loginpage.validateLoginPageTitle();
-		Assert.assertEquals(title,"Login");*/
-		System.out.println("this is Test1");
+		String title = loginpage.validateLoginPageTitle();
+		Assert.assertEquals(title,"Login");
+		
 	}
 	@Test(priority = 2)
 	public void mlaLogoImageTest() {
-		/*boolean flag = loginpage.validateMLAImage();
-		Assert.assertTrue(flag);*/
-		System.out.println("this is Test2");
+		boolean flag = loginpage.validateMLAImage();
+		Assert.assertTrue(flag);
+		
 	}
 	@Test(priority = 3)
 	public void loginTest() {
-		/*dashboardpage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));*/
-		System.out.println("this is Test3");
+		dashboardpage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
+		
 	}
   
 	@AfterTest
 	public void tearDown() {
 		//driver.quit();
-		System.out.println("this is aftertest");
+		
 	}
-	@AfterClass
-	public void tearDown1() {
-		//driver.quit();
-		System.out.println("this is afterclass");
+	
 	}
 
 
-}
+
