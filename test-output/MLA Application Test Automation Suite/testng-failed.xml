@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MLA Application Test Automation Suite]">
+  <test thread-count="5" name="MLA Application Test Cases1(failed)">
+    <classes>
+      <class name="com.mla.qa.testcases.SearchPublisherPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="SearchByPublisherName"/>
+        </methods>
+      </class> <!-- com.mla.qa.testcases.SearchPublisherPageTest -->
+      <class name="com.mla.qa.testcases.DashboardTestPage">
+        <methods>
+          <include name="VerifydashboardPagetitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mla.qa.testcases.DashboardTestPage -->
+      <class name="com.mla.qa.testcases.LoginTestPage">
+        <methods>
+          <include name="mlaLogoImageTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.mla.qa.testcases.LoginTestPage -->
+    </classes>
+  </test> <!-- MLA Application Test Cases1(failed) -->
+</suite> <!-- Failed suite [MLA Application Test Automation Suite] -->

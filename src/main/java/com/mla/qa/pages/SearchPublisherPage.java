@@ -1,5 +1,6 @@
 package com.mla.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,10 +20,13 @@ public class SearchPublisherPage extends TestBase{
 		
 		}
 
-public void SearchPublisherfunctionality() {
+	public void SearchPublisherfunctionality() {
 	PublisherName.sendKeys("*");
     SearchButton.click();
+	}
 	
- 
-}
+	public void SelectAndDeletePublisher(String pubid) {
+		driver.findElement(By.xpath(
+				".//table[@id='publisher-content-table']/tbody//td[@class='text-center']//input[@data-id='"+pubid+"']")).click();
+	}
 }

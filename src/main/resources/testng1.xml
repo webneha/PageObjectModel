@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MLA Application Test Automation Suite">
+	<test name="MLA Application Test Cases1" preserve-order="true">
+		<classes>
+			<class name="com.mla.qa.testcases.LoginTestPage">
+				<methods>
+					<include name="loginPageTitleTest" />
+					<include name="mlaLogoImageTest" />
+					<include name="loginTest" />
+				</methods>
+			</class>
+			<class name="com.mla.qa.testcases.DashboardTestPage">
+				<methods>
+					<include name="VerifydashboardPagetitleTest" />
+					<include name="verifyDashboardScreenLableTest" />
+					<include name="verifyClickOnThesWorkFlowIconTest" />
+					<include name="verifyClickOnAppPublisherIconTest" />
+					<include name="verifyClickOnSearchPublisherTabTest" />
+				</methods>
+			</class>
+			<class name="com.mla.qa.testcases.SearchPublisherPageTest"></class>
+		</classes>
+	</test>
+</suite>
