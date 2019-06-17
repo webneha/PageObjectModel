@@ -24,10 +24,10 @@ public class AddPublisherPage extends TestBase {
 		
 		}
 	
-	public void createNewPublisher(String country, String name,String PlaceOfPublication )
+	public void createNewPublisher(String name,String poc,String country)
 	{
 		pubname.sendKeys(name);
-		POP.sendKeys(PlaceOfPublication);
+		POP.sendKeys(poc);
 		Select select = new Select(driver.findElement(By.id("country")));
 		select.selectByVisibleText(country);
 		CreatePub.click();

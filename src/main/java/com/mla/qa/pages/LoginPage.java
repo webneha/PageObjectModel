@@ -1,6 +1,7 @@
 package com.mla.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -9,12 +10,15 @@ import com.mla.qa.base.TestBase;
 public class LoginPage extends TestBase {
 //page factory or object repository
 	@FindBy(name="username")
+	@CacheLookup
 	WebElement username;
 	
 	@FindBy(id ="password")
+	@CacheLookup
 	WebElement password;
 	
 	@FindBy(id ="btn-login")
+	@CacheLookup
 	WebElement SignIn;
 	
 	@FindBy(id ="forgotPassword")

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MLA Application Test Automation Suite]">
+  <listeners>
+    <listener class-name="com.mla.qa.ExtentReportsListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="MLA Application Test Cases1(failed)">
     <classes>
-      <class name="com.mla.qa.testcases.AddPublisherPageTest">
+      <class name="com.mla.qa.testcases.LoginTestPage">
         <methods>
-          <include name="AddNewPublisherDetails"/>
-          <include name="tearDown"/>
+          <include name="loginTest"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.mla.qa.testcases.AddPublisherPageTest -->
+      </class> <!-- com.mla.qa.testcases.LoginTestPage -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- MLA Application Test Cases1(failed) -->
+</suite> <!-- Failed suite [MLA Application Test Automation Suite] -->
