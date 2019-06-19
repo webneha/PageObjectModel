@@ -16,8 +16,8 @@ import org.openqa.selenium.TakesScreenshot;
 import com.mla.qa.base.TestBase;
 
 public class TestUtil extends TestBase {
-	public static long PAGE_LOADT_TIMEOUT = 20;
-	public static long IMPLICIT_WAIT = 20;
+	public static long PAGE_LOADT_TIMEOUT = 60;
+	public static long IMPLICIT_WAIT = 30;
 	static Workbook book;
 	static Sheet sheet;
 	static JavascriptExecutor js;

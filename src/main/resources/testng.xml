@@ -12,10 +12,10 @@
 		<classes>
 			<class name="com.mla.qa.testcases.DashboardTestPage"></class>
 		</classes>
-	</test> -->
-	<!-- <test name="MLA Application Test Cases3">
+	</test>  -->
+	 <!-- <test name="MLA Application Test Cases3">
 		<classes>
 			<class name="com.mla.qa.testcases.SearchPublisherPageTest"></class>
 		</classes>
-	</test> -->
+	</test>  -->
 </suite>

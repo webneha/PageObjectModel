@@ -4,15 +4,17 @@
   <listeners>
     <listener class-name="com.mla.qa.ExtentReportsListener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="MLA Application Test Cases1(failed)">
+  <test thread-count="5" name="MLA Application Test Cases2(failed)">
     <classes>
-      <class name="com.mla.qa.testcases.LoginTestPage">
+      <class name="com.mla.qa.testcases.DashboardTestPage">
         <methods>
-          <include name="loginTest"/>
-          <include name="setUp"/>
+          <include name="verifyClickOnAppPublisherIconTest"/>
           <include name="tearDown"/>
+          <include name="verifyClickOnSearchPublisherTabTest"/>
+          <include name="verifyClickOnThesWorkFlowIconTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.mla.qa.testcases.LoginTestPage -->
+      </class> <!-- com.mla.qa.testcases.DashboardTestPage -->
     </classes>
-  </test> <!-- MLA Application Test Cases1(failed) -->
+  </test> <!-- MLA Application Test Cases2(failed) -->
 </suite> <!-- Failed suite [MLA Application Test Automation Suite] -->

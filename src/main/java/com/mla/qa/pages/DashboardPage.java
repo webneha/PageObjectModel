@@ -1,6 +1,6 @@
 package com.mla.qa.pages;
 
-import java.util.concurrent.TimeUnit;
+
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.mla.qa.base.TestBase;
-import com.mla.qa.util.TestUtil;
 
 public class DashboardPage extends TestBase {
      
@@ -26,11 +25,17 @@ public class DashboardPage extends TestBase {
 	@FindBy(xpath ="//a[@href='#Publisher']")
 	WebElement Pub;
 	
+	@FindBy(xpath ="//a[@href='#Media']")
+	WebElement Media;
+	
 	@FindBy(xpath ="//a[@href ='/mla-webapp/publisher/search']")
 	WebElement SearchPub;
 	
 	@FindBy(xpath ="//a[@href ='/mla-webapp/publisher/add']")
 	WebElement AddPub;
+	
+	@FindBy(xpath ="//a[@href ='/mla-webapp/media/add/Journal']")
+	WebElement AddMedia;
 	
 	public DashboardPage(){
 		PageFactory.initElements(driver, this);
@@ -49,7 +54,6 @@ public class DashboardPage extends TestBase {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		thesWorkflow.click();
@@ -60,7 +64,6 @@ public class DashboardPage extends TestBase {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		AppPublisher.click();
@@ -73,7 +76,6 @@ public class DashboardPage extends TestBase {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		SearchPub.click();
@@ -88,6 +90,15 @@ public class DashboardPage extends TestBase {
 		AddPub.click();
 		return new AddPublisherPage();
 		
+	}
+	
+	public AddMediaPage navigateToAddMediaPage() {
+		Actions action = new Actions(driver);
+		action.moveToElement(Media).clickAndHold().build().perform();
+		wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(AddMedia));
+		AddMedia.click();
+		return new AddMediaPage();
 	}
 	
 }
