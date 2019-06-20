@@ -37,9 +37,14 @@ public class AddMediaPageTest extends TestBase {
 		return data;
 	}
 
-	@Test(priority = 1, dataProvider = "getMLATestData")
+	/*@Test(priority = 1, dataProvider = "getMLATestData")
 	public void AddNewMediaDetails(String name,String pub,String indexer) {
 		addMedia.createNewMedia(name, pub, indexer);
+	}*/
+	
+	@Test(priority = 1, dataProvider = "getMLATestData")
+	public void AddNewMediaAndTrackingDetails(String name,String pub,String indexer, String pdate, String volume , String issue, String format , String articleTitle) {
+		addMedia.createNewMediaWithTracking(name, pub, indexer, pdate, volume, issue, format,articleTitle);
 	}
 	
 	

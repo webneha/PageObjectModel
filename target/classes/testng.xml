@@ -1,18 +1,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="MLA Application Test Automation Suite">
+	<listeners>
+		<listener class-name="com.mla.qa.ExtentReportsListener.ExtentReporterNG" />
+	</listeners>
 	<test name="MLA Application Test Cases1">
 		<classes>
 			<class name="com.mla.qa.testcases.LoginTestPage"></class>
 		</classes>
 	</test>
-	<test name="MLA Application Test Cases2">
+	<!-- <test name="MLA Application Test Cases2">
 		<classes>
 			<class name="com.mla.qa.testcases.DashboardTestPage"></class>
 		</classes>
-	</test>
-	<test name="MLA Application Test Cases3">
+	</test>  -->
+	 <!-- <test name="MLA Application Test Cases3">
 		<classes>
 			<class name="com.mla.qa.testcases.SearchPublisherPageTest"></class>
 		</classes>
-	</test>
+	</test>  -->
 </suite>
